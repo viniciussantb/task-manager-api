@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Task {
 
     @Id
-    @JsonProperty(value = "Id")
+    @JsonProperty(value = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;

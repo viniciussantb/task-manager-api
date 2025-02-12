@@ -26,7 +26,7 @@ public class Task {
 
     @JsonProperty(value = "dueDate")
     @Column(name = "dueDate")
-    private Date dueDate;
+    private long dueDate;
 
     @JsonProperty(value = "status")
     @Column(name = "status")
@@ -57,11 +57,11 @@ public class Task {
         this.description = description;
     }
 
-    public Date getDueDate() {
+    public long getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
+    public void setDueDate(long dueDate) {
         this.dueDate = dueDate;
     }
 
